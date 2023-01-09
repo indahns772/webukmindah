@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>FORM</title>
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <!-- link font awesome cdn   -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="stylependaftaran.css">
+
+</head>
+<body>
+
+<!-- Mulai header  -->
+
+<section class="header">
+
+   <a href="home.html" class="logo">UNIVERSITAS PADJAJARAN</a>
+
+   <nav class="navbar">
+      <a href="index.html"></a>
+        <a href="home.html">HOME</a>
+      <a href="profilekegiatan.html">PROFILE</a>
+      <a href="gallerykegiatan.html">GALLERY</a>
+      <a href="Pendaftaran.html">PENDAFTARAN</a>
+      <a href="kontak.html">KONTAK</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- Mulai home   -->
+
+<section class="home">
+   <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide slide" style="background:url(imG/banner.jpg) no-repeat">
+            <div class="content">
+            </div>
+         </div>
+      </div>
+
+</section>
+    <!--NIM, NAMA, JENIS KELAMIN, AGAMA, STATUS, JURUSAN, KOMENTAR.-->
+    <form><br><br>
+    <h1 font align="center">SELAMAT DATANG</h1>
+    <hr width=100% size=3 color="black" align=left>
+   
+   
+    <form action="login.php" method="POST">
+        <fieldset>
+        <legend>Form Pendaftaran</legend>
+        <p>
+    <PRE>
+    
+    NIM                       : <input type="text" size="11" name="nim">
+    
+    NAMA                   : <input type="text" size="25" name="nama">
+    
+
+    JENIS KELAMIN   : 
+
+    <input type="radio" name="jkel" value="Pria">Pria 
+
+    <input type="radio" name="jkel" value="Wanita">Wanita
+    
+
+    PROGRAM STUDI : <select name="programstudi" Size="1">
+   <option value ="Teknik Informatika"> Teknik Informatika </option>
+   <option value ="Manajemen Informatika"> Manajemen Informatika</option>
+   <option value ="Teknik Komputer"> Teknik Komputer </option>
+   <option value ="Teknik Industri"> Teknik Industri </option>
+   </select>
+    
+
+    UKM                       : <select name="UKM" Size="1">
+    <option value ="desaigner"> Seni </option>
+    <option value ="editor"> Basket </option>
+    <option value ="programmer"> Tenis </option>
+    <option value ="data science"> Bola </option>
+    </select>
+    
+
+    HARI                       : 
+    
+    <input type="checkbox" name="hoby" value="Senin">Senin 
+    
+    <input type="checkbox" name="hoby" value="Selasa">Selasa 
+    
+    <input type="checkbox" name="hoby" value="Rabu">Rabu 
+    
+    <input type="checkbox" name="hoby" value="Kamis">Kamis
+    
+    <input type="checkbox" name="hoby" value="Jum'at">Jum'at
+
+
+</PRE>
+
+<BR>
+     <input type="submit" value="Simpan">
+     <input type="batal" value="Batal">
+    </form>
+</fieldset>
+<section class="footer">
+   <div class="credit"> Copyright, <span> Indahnurseha </span> 2022 </div>
+</section>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
